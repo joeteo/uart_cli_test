@@ -26,7 +26,7 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -204,7 +204,7 @@ struct Command_List  CmdList[] =
 void cmd_handler(char* cmd)
 {
 	struct Command_List* pCmdList = CmdList;
-	uint32_t i = 0;
+
 	uint32_t command_found = 0;
 
 	int	  argc;
@@ -360,26 +360,6 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 
 		}
 
-//		if(rx_start == 0){
-//			if(rx3_data == 0x02){
-//				bufindex = 0;
-//				rx_start = 1;
-//			}
-//		}
-//		else {
-//			if(rx3_data != 0x03)
-//				rx3buf[bufindex++] = rx3_data;
-//			else {
-//				uint16_t checksum = 0;
-//				for(int i=0; i<bufindex-1; i++)
-//					checksum += rx3buf[i];
-//
-//				if((uint8_t)(checksum & 0xFF) == rx3buf[bufindex-1])
-//					rx_complete = 1;
-//
-//				rx_start = 0;
-//			}
-//		}
 
 		HAL_UART_Receive_IT(&huart3, &rx3_data, 1);
 	}
