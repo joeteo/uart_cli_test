@@ -1,0 +1,13 @@
+../Core/Src/main.c:60:1:__io_putchar	16	static
+../Core/Src/main.c:86:5:cmd_torque	16	static
+../Core/Src/main.c:103:5:cdm_pump	16	static
+../Core/Src/main.c:120:5:cmd_conveyorBelt	16	static
+../Core/Src/main.c:149:5:cmd_pick	16	static
+../Core/Src/main.c:155:5:cmd_throw	16	static
+../Core/Src/main.c:161:5:cmd_exit	16	static
+../Core/Src/main.c:167:6:parse_input_string	32	static
+../Core/Src/main.c:204:6:cmd_handler	72	static
+../Core/Src/main.c:243:5:main	16	static
+../Core/Src/main.c:296:6:SystemClock_Config	88	static
+../Core/Src/main.c:347:6:HAL_UART_RxCpltCallback	24	static
+../Core/Src/main.c:395:6:Error_Handler	4	static,ignoring_inline_asm
